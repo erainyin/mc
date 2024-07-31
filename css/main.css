@@ -1202,7 +1202,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #3bc640;
+  background: #209141;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1611,14 +1611,6 @@ pre .javascript .function {
   transition: all 0.5s;
   opacity: 0.4;
 }
-.post-body-in-list img:hover {
-  opacity: 1;
-  filter: none;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
-}
 .post-sticky-flag {
   display: inline-block;
   transform: rotate(30deg);
@@ -1665,6 +1657,14 @@ pre .javascript .function {
 .posts-collapse .article-list:hover span.exturl {
   border-bottom: none;
   color: #fff;
+}
+.posts-collapse .article-list:hover .post-body img {
+  opacity: 1;
+  filter: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .posts-collapse .article-list .post-header {
   position: absolute;
@@ -1741,11 +1741,14 @@ pre .javascript .function {
 .posts-collapse .post-meta a {
   color: #fff;
   font-size: 12px;
-  padding: 3px 5px;
+  padding: 3px 10px 5px;
   border-radius: 10px;
   background: #000;
   text-transform: uppercase;
   white-space: nowrap;
+}
+.posts-collapse .post-meta a:hover {
+  background: #d23636;
 }
 .posts-collapse .post-title a,
 .posts-collapse .post-title span.exturl {
